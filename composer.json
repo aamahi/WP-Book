@@ -1,0 +1,20 @@
+{
+    "name": "mahi/wp-book",
+    "description": "this is book management wordpress plugin",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "mahi",
+            "email": "hello@abdullahmahi.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mahi\\WP\\Book\\" : "includes/"
+        },
+        "files": []
+    }
+}

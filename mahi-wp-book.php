@@ -1,5 +1,6 @@
 <?php
 
+namespace Mahi\WP\Book;
 
 /**
  * Plugin Name:         Mahi WP Book
@@ -23,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-//require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 /**
  * The main plugin class
@@ -110,7 +111,7 @@ final class Mahi_WP_Book {
         echo "Hello word";
 
 //        if ( is_admin() ) {
-//            new Admin();
+            new Admin();
 //        }
 //        new Frontend();
 //        new Assets();
@@ -122,8 +123,8 @@ final class Mahi_WP_Book {
      * @return void
      */
     public function activate() {
-//        $installer = New Installer();
-//        $installer->run();
+        $installer = New Installer();
+        $installer->run();
     }
 
 }

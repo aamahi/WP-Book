@@ -108,7 +108,6 @@ final class Mahi_WP_Book {
      * @return void
      */
     public function init_plugin() {
-        echo "Hello word";
 
 //        if ( is_admin() ) {
             new Admin();

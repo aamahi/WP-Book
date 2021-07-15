@@ -27,5 +27,5 @@ class Installer {
             update_option( 'mahi_wp_book_installed', time() );
         }
 
-        update_option( 'mahi_wp_book_version', MWP_VERSION );
+        update_option( 'mahi_wp_book_version', MWB_VERSION );
     }}

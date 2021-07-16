@@ -53,6 +53,6 @@ class Book_Category_Taxonomy {
         /**
          * register the taxonomy
          */
-        register_taxonomy('book-category', [ 'book' ], $args );
+        register_taxonomy('book_category', [ 'book' ], $args );
     }
 }

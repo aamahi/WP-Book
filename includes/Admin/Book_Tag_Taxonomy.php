@@ -35,7 +35,7 @@ class Book_Tag_Taxonomy {
             'update_item'       => __( 'Update Book Tag', 'wp-book' ),
             'add_new_item'      => __( 'Add New Book Tag', 'wp-book' ),
             'new_item_name'     => __( 'New Book Tag Name', 'wp-book' ),
-            'menu_name'         => __( 'Book Categories', 'wp-book' ),
+            'menu_name'         => __( 'Book Tags', 'wp-book' ),
         ];
 
         $args = [
@@ -50,6 +50,6 @@ class Book_Tag_Taxonomy {
         /**
          * register the taxonomy
          */
-        register_taxonomy('book-tag', [ 'book' ], $args );
+        register_taxonomy('book_tag', [ 'book' ], $args );
     }
 }

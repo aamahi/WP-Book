@@ -40,7 +40,7 @@ class Book_CPT {
             'labels'              => $labels,
             'menu_icon'           => 'dashicons-admin-page',
             'supports'            => array( 'title', 'editor', 'thumbnail' ),
-            'taxonomies'          => array( 'subjects' ),
+            'taxonomies'          => array( 'book_tag', 'book_category' ),
             'public'              => true,
             'show_ui'             => true,
             'show_in_menu'        => true,

@@ -108,12 +108,11 @@ final class Mahi_WP_Book {
      * @return void
      */
     public function init_plugin() {
-
-//        if ( is_admin() ) {
+        if ( is_admin() ) {
             new Admin();
-//        }
+        }
 //        new Frontend();
-//        new Assets();
+        new Assets();
     }
 
     /**

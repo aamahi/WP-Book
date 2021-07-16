@@ -17,23 +17,28 @@ class Book_Category_Taxonomy {
         add_action( 'init', [ $this, 'create_book_category_taxonomy' ] );
     }
 
+    /**
+     * Create a New book_category taxonomy.
+     *
+     * @return void
+     */
     public function create_book_category_taxonomy() {
 
         /**
          * Add new taxonomy, make it hierarchical.
          */
         $labels = [
-            'name'              => _x( 'Book Categories', 'taxonomy a general name', 'book-review' ),
-            'singular_name'     => _x( 'Book Category', 'taxonomy a general name', 'book-review' ),
-            'search_items'      => __( 'Search Book Category', 'book-review' ),
-            'all_items'         => __( 'All Book Category', 'book-review' ),
-            'parent_item'       => __( 'Parent Book Category', 'book-review' ),
-            'parent_item_colon' => __( 'Parent Book Category:', 'book-review' ),
-            'edit_item'         => __( 'Edit  Book Category', 'book-review' ),
-            'update_item'       => __( 'Update Book Category', 'book-review' ),
-            'add_new_item'      => __( 'Add New Book Category', 'book-review' ),
-            'new_item_name'     => __( 'New Book Category Name', 'book-review' ),
-            'menu_name'         => __( ' Book Categories', 'book-review' ),
+            'name'              => _x( 'Book Categories', 'taxonomy a general name', 'wp-book' ),
+            'singular_name'     => _x( 'Book Category', 'taxonomy a general name', 'wp-book' ),
+            'search_items'      => __( 'Search Book Category', 'wp-book' ),
+            'all_items'         => __( 'All Book Category', 'wp-book' ),
+            'parent_item'       => __( 'Parent Book Category', 'wp-book' ),
+            'parent_item_colon' => __( 'Parent Book Category:', 'wp-book' ),
+            'edit_item'         => __( 'Edit  Book Category', 'wp-book' ),
+            'update_item'       => __( 'Update Book Category', 'wp-book' ),
+            'add_new_item'      => __( 'Add New Book Category', 'wp-book' ),
+            'new_item_name'     => __( 'New Book Category Name', 'wp-book' ),
+            'menu_name'         => __( 'Book Categories', 'wp-book' ),
         ];
 
         $args = [

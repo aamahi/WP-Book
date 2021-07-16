@@ -5,7 +5,7 @@ namespace Mahi\WP\Book;
 
 use Mahi\WP\Book\Admin\Book_Category_Taxonomy;
 use Mahi\WP\Book\Admin\Book_CPT;
-use Mahi\WP\Book\Admin\Book_Tag_Taxonomie;
+use Mahi\WP\Book\Admin\Book_Tag_Taxonomy;
 
 /**
  * The Admin Class.
@@ -16,5 +16,6 @@ class Admin {
     public function __construct() {
         new Book_CPT();
         new Book_Category_Taxonomy();
+        new Book_Tag_Taxonomy();
     }
 }

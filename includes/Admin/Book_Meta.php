@@ -17,19 +17,24 @@ class Book_Meta {
         add_action( 'add_meta_boxes', [ $this, 'add_book_meta_box' ], 10, 2 );
     }
 
+    /**
+     * Add Book Meta Box
+     */
     public function add_book_meta_box() {
         add_meta_box(
             'book_meta',
             __( "WP Book", 'wp-book' ),
-            function () {echo "Hello";},
-//            [ $this, 'display_book_meta_boxes' ],
-            'book_meta',
+            [ $this, 'display_book_meta_boxes' ],
+            'book',
             'advanced'
 
         );
     }
+
+    /**
+     * display Book meta box.
+     */
     public function display_book_meta_boxes() {
-        echo "HELLO";
         /**
          * load subscription-metadata-style file
          */

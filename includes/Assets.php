@@ -37,9 +37,9 @@ class Assets {
      */
     public function get_styles() {
         return [
-            'wp_book_metabox_style' => [
-                'src'     => MWB_ASSETS . '/css/wp_book_metabox.css',
-                'version' => filemtime( MWB_PATH . '/assets/css/wp_book_metabox.css' )
+            'book_meta_data_style' => [
+                'src'     => MWB_ASSETS . '/css/book_meta_data_style.css',
+                'version' => filemtime( MWB_PATH . '/assets/css/book_meta_data_style.css' )
             ],
         ];
     }
